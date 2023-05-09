@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        a {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="imagen" >
+            
+        </div>
+        <div class="conteudo">
+            <h1>saiba seu <strong>IMC</strong></h1>
+            <label for="ikg">seu peso(Kg)</label>
+            <input type="number" name="kg" id="ikg" autocomplete="off" placeholder="(ex:70 ou 70.6)">
+            <label for="ialt">sua altura(cm)</label>
+            <input type="number" name="alt" id="ialt" autocomplete="off" placeholder="(ex:1.80)">
+            <p id="calcu"></p>
+            <a href="#" class="teste">mais informações</a>
+            <input type="button" value="calcular" onclick="calcular()">
+
+        </div>
+    </main>
+
+    <script src="calculo.js">
+
+    </script>
+</body>
+</html>
