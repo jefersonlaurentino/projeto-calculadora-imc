@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <style>
-        a {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <main>
@@ -18,15 +13,16 @@
             
         </div>
         <div class="conteudo">
-            <h1>saiba seu <strong>IMC</strong></h1>
-            <label for="ikg">seu peso(Kg)</label>
+            <h1>calculadora de <strong>IMC</strong></h1>
+            <label for="ikg">Peso(Kg)</label>
             <input type="number" name="kg" id="ikg" autocomplete="off" placeholder="(ex:70 ou 70.6)">
-            <label for="ialt">sua altura(cm)</label>
+            <label for="ialt">Altura(cm)</label>
             <input type="number" name="alt" id="ialt" autocomplete="off" placeholder="(ex:1.80)">
-            <p id="calcu"></p>
-            <a href="#" class="teste">mais informações</a>
-            <input type="button" value="calcular" onclick="calcular()">
+            <input type="button" value="calcular" onclick="calcular()" onmouseup="testeclick()">
+            <p id="calcu">
 
+            </p>
+            <a href="#" id="teste">mais informações</a>
         </div>
     </main>
 
