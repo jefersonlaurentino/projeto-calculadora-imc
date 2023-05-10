@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
@@ -13,16 +15,17 @@
             
         </div>
         <div class="conteudo">
-            <h1>calculadora de <strong>IMC</strong></h1>
+            <h1>Calculadora de <strong>IMC</strong></h1>
             <label for="ikg">Peso(Kg)</label>
             <input type="number" name="kg" id="ikg" autocomplete="off" placeholder="(ex:70 ou 70.6)">
             <label for="ialt">Altura(cm)</label>
             <input type="number" name="alt" id="ialt" autocomplete="off" placeholder="(ex:1.80)">
-            <input type="button" value="calcular" onclick="calcular()" onmouseup="testeclick()">
+            <input type="button" value="Calcular" onclick="calcular()" onmouseup="testeclick()">
             <p id="calcu">
 
             </p>
-            <a href="#" id="teste">mais informações</a>
+            <a href="#" id="teste">Mais Informações
+            <span class="material-icons">launch</span></a>
         </div>
     </main>
 

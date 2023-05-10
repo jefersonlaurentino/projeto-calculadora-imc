@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, rgb(33, 232, 6) , transparent);
+    }
+
+    main {
+        width: 700px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: absolute;
+        box-shadow: 0px -4px 20px 0px #ffffff78;
+    }
+
+    div#imagen {
+        position: absolute;
+        float: left;
+        background-image: url(../imagens/img2.svg);
+        width: 40%;
+        height: 100%;
+    }
+
+    div.conteudo {
+        float: right;
+        width: 60%;
+        padding: 10px;
+    }
+}
