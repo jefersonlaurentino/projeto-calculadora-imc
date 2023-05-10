@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: 2em;
+    color: rgb(82, 124, 241);
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+td , th {
+    height: 40px;
+    width: 300px;
+    border: 3px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    background-color: rgb(31, 68, 170);
+    color: white;
+}
+
+.blue {
+    background-color: rgb(121, 157, 255);
+    color: white;
+}

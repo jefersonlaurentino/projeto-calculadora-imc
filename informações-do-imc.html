@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informações</title>
+    <link rel="stylesheet" href="estilos/infor-style.css">
+</head>
+<body>
+    <article>
+        <h1>O que é IMC?</h1>
+            <p>
+                IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+            </p>
+            <p>
+                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+            </p>
+            <p>
+                Esta calculadora mede o IMC de pessoas acima de 18 anos Crianças e adolescentes devem consultar um profissional de saúde especializado.
+            </p>
+            <table>
+                <caption>VEJA A INTERPRETAÇÃO DO IMC</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">IMC</th>
+                        <th scope="col">Classificação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="blue">menor que 18.5</td>
+                        <td>abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">entre 18.6 e 24.9</td>
+                        <td>peso ideal (parabéns)</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">entre 25.0 e 29.9</td>
+                        <td>levemente acima do peso</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">entre 30.0 e 34.9</td>
+                        <td>obesidade grau 1</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">entre 35.0 e 39.9</td>
+                        <td>obesidade grau 2 (severa)</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">acima de 40</td>
+                        <td>obesidade 3 (mórbida)</td>
+                    </tr>
+                </tbody>
+            </table>
+    </article>
+    <script src="calculo.js">         
+        function clickinfor() {
+            var p = Number(peso.value)
+            var a = Number(altura.value)
+
+            var rimc = p / (a * a)
+            var resimc = rimc.toFixed(2)
+            console.log(resimc)
+
+            if (resimc <= 18.5) {
+                peso.style.background = 'blue'
+            } 
+        }
+
+    </script>
+</body>
+</html>
